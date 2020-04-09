@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "236507627671",
+    "firebase_url": "https://farmbot-cd9bb.firebaseio.com",
+    "project_id": "farmbot-cd9bb",
+    "storage_bucket": "farmbot-cd9bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236507627671:android:0ba88a5cd88036f985e9d2",
+        "android_client_info": {
+          "package_name": "com.example.test_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236507627671-b54kmhrl1t2ai38ft5cdgs487nrpaq79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4cLvVPRymDFufshC4Vlx25u9s0li0hTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236507627671-b54kmhrl1t2ai38ft5cdgs487nrpaq79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
