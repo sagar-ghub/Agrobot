@@ -9,6 +9,9 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
+  TextEditingController _firstName;
+  TextEditingController _lastName;
+  TextEditingController _phoneNumber;
   TextEditingController _emailController;
   TextEditingController _passwordController;
   TextEditingController _passwordConfirmationController;
@@ -16,6 +19,9 @@ class _RegisterState extends State<Register> {
 
   @override
   void initState() {
+    _firstName=new TextEditingController();
+    _lastName=new TextEditingController();
+    _phoneNumber= new TextEditingController();
     _emailController = new TextEditingController();
     _passwordController = new TextEditingController();
     _passwordConfirmationController = new TextEditingController();
@@ -40,6 +46,45 @@ class _RegisterState extends State<Register> {
             child: Form(
                 child: Column(
                   children: <Widget>[
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'First Name',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(32)
+                        )
+                      ),
+                      controller:_firstName,
+                      keyboardType: TextInputType.text,
+                      validator: (String email){
+                        return null;
+                      },
+                    ),SizedBox(height:10),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Last Name',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(32)
+                        )
+                      ),
+                      controller: _lastName,
+                      keyboardType: TextInputType.text,
+                      validator: (String email){
+                        return null;
+                      },
+                    ),SizedBox(height:10),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: 'Phone Number',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(32)
+                        )
+                      ),
+                      controller: _phoneNumber,
+                      keyboardType: TextInputType.phone,
+                      validator: (String email){
+                        return null;
+                      },
+                    ),SizedBox(height:10),
                     TextFormField(
                       decoration: InputDecoration(
                         hintText: 'Email',
@@ -113,10 +158,14 @@ class _RegisterState extends State<Register> {
                             (user) => Firestore.instance.collection('users')
                                               .document(user.user.uid)
                                               .setData({
+                              'firstName':_firstName.text,
+                              'lastName':_lastName.text,
+                              'phoneNumber':_phoneNumber.text,
                               'email':user.user.email,
                               'cropNames' : [_cropName.text]
                                               })
                         );
+                        Navigator.pushNamed(context, '/login');
                       },
                     )
                   ],
