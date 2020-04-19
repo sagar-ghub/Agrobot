@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "236507627671",
-    "firebase_url": "https://farmbot-cd9bb.firebaseio.com",
-    "project_id": "farmbot-cd9bb",
-    "storage_bucket": "farmbot-cd9bb.appspot.com"
+    "project_number": "274132080488",
+    "firebase_url": "https://test-6d5dc.firebaseio.com",
+    "project_id": "test-6d5dc",
+    "storage_bucket": "test-6d5dc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:236507627671:android:0ba88a5cd88036f985e9d2",
+        "mobilesdk_app_id": "1:274132080488:android:e77222f73bd03be60128dd",
         "android_client_info": {
           "package_name": "com.example.test_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "236507627671-b54kmhrl1t2ai38ft5cdgs487nrpaq79.apps.googleusercontent.com",
+          "client_id": "274132080488-qrgfhiqjgpggt8cp586n8d554b2f0an0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC4cLvVPRymDFufshC4Vlx25u9s0li0hTU"
+          "current_key": "AIzaSyAKy_tfvchIjfpa7Fo8PiLj_g2ha0QWFHQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "236507627671-b54kmhrl1t2ai38ft5cdgs487nrpaq79.apps.googleusercontent.com",
+              "client_id": "274132080488-qrgfhiqjgpggt8cp586n8d554b2f0an0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
